@@ -1,0 +1,81 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-image: url('bg.jpg'); */
+    background: linear-gradient(to right, orange, rgb(177, 171, 5));
+    font-family: Arial, sans-serif;
+    /* background-color: #f4f4f4; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+div {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the messages list */
+ul#messages {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+    height: 300px;
+    overflow-y: scroll;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+
+ul#messages li {
+    padding: 8px;
+    margin-bottom: 5px;
+    background-color: #f1f1f1;
+    border-radius: 4px;
+}
+
+/* Style for the input and button */
+input#m {
+    width: calc(100% - 70px); /* Ensures it fits alongside the button */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+}
+
+button {
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    div {
+        width: 90%;
+    }
+
+    input#m {
+        width: calc(100% - 80px);
+    }
+}
